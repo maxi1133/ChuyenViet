@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import { useSelector, useDispatch } from "react-redux";
-// import { useTranslation, Trans } from "react-i18next";
 import Login from "./Login/Login";
 
-// import AdminRoute from "./AdminRoute/AdminRoute";
 
+/////////////////////////////////////////////////////////////
+
+// import AdminRoute from "./AdminRoute/AdminRoute";
 import TestAdminRoute from "./TestUIAdmin/TestAdminRoute";
 
-// import { BrowserRouter as Router, Route } from "react-router-dom";
+/////////////////////////////////////////////////////////////
+
 
 export default function App() 
 {

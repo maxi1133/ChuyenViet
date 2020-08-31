@@ -1,6 +1,7 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
+
+
 
 export default function Login(props) 
 {
@@ -20,11 +21,40 @@ export default function Login(props)
   let back = () => {
     dispatch({type : 'setState',payload:1})
   }
+
+  function addCSS(url,i)
+  {
+    var head = document.head;
+    var link = document.createElement("link");
+    link.id = i
+    link.type = "text/css";
+    link.rel = "stylesheet";
+    link.href = url;
+    listcss.push(link)
+    head.appendChild(link);
+  }
+
+  let listcss = []
   //////////////////////////////////////// Function trggeer
 
   /////
   /////
-  /////
+  let cssDir =[
+    // 'css/bootstrap.min.css'
+  ,'css/font-awesome.min.css','css/nprogress.css','css/animate.min.css','css/custom.min.css']
+
+  useEffect(() => {
+    console.log(document.styleSheets)
+    cssDir.forEach((val,i)=>{
+      addCSS(val,i)
+    })
+
+    return () => {
+      // listcss.map((val,i)=>{ return val.remove() })
+    }
+    // eslint-disable-next-line
+  }, [])
+
   /////
   /////
 
