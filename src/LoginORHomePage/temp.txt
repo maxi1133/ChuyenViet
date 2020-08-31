@@ -1,0 +1,27 @@
+// let dispatch = useDispatch();
+  // let reduxState = useSelector(state => state.st)
+  // let {t , i18n } = useTranslation()
+  
+  // useEffect(() => {
+  //   // dispatch({ type: "congcong", payload: "123" });
+  //   return () => {  }
+  // }, 
+  // // eslint-disable-next-line
+  // []);
+  // console.log(reduxState);
+    // <div>
+    //   <button
+    //     onClick={(e) => {
+    //       dispatch({ type: "congcong", payload: 1 });
+    //     }}> +++++++ </button>
+
+    //   <div>
+    //     {reduxState.a}
+    //   </div>
+
+    //   <div>
+    //     <button onClick={e=>{i18n.changeLanguage('en')}}>en</button><button onClick={e=>{i18n.changeLanguage('vi')}}>vi</button>
+    //     <Trans>homepage</Trans>
+    //   </div>
+
+    // </div></div>
