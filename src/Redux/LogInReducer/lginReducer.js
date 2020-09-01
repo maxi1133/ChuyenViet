@@ -1,11 +1,10 @@
-export let lginReducer = (state = { stt: 1 }, action) => {
+export let lginReducer = (state = { LOGINstatus: 1  , WaitingPageStatus : 0}, action) => {
   switch (action.type) {
-    case "setState": 
-    {
-      state.stt = action.payload;
+    case "setState": {
+      state.LOGINstatus = action.payload;
       return { ...state };
     }
-    
+
     default:
       return { ...state };
   }
