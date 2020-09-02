@@ -39,7 +39,7 @@ export default function Admin3Route() {
                 </div>
               </li>
               <li>
-                <a href="#!" onclick="javascript:toggleFullScreen()">
+                <a href="#!" onClick="javascript:toggleFullScreen()">
                   <i className="feather icon-maximize full-screen" />
                 </a>
               </li>

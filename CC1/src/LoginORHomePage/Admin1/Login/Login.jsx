@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { addAdminCSSvsJS3, addCSS, clearCSS } from "../../totalFunction";
+import { addAdminCSSvsJS3, addCSS, clearCSS, addScript } from "../../totalFunction";
 // import {  } from "../../totalFunction";
 
 export default function Login(props) {
@@ -31,17 +31,17 @@ export default function Login(props) {
       "LoginCSS/animate.min.css",
       "LoginCSS/custom.min.css",
     ];
-    // let admin2CSS =[
-    //     'cssTest/vendor/fontawesome-free/css/all.min.css',
-    //   //   'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
-    //     'cssTest/css/sb-admin-2.min.css'
-    // ]
-    // let admin2Script =[
-    //   //   'cssTest/vendor/jquery/jquery.min.js',
-    //     'cssTest/vendor/bootstrap/js/bootstrap.bundle.min.js',
-    //     'cssTest/vendor/jquery-easing/jquery.easing.min.js',
-    //     'cssTest/js/sb-admin-2.min.js'
-    // ]
+    let admin2CSS =[
+        'Admin2CSS/vendor/fontawesome-free/css/all.min.css',
+      //   'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i',
+        'Admin2CSS/css/sb-admin-2.min.css'
+    ]
+    let admin2Script =[
+      //   'cssTest/vendor/jquery/jquery.min.js',
+        'Admin2CSS/vendor/bootstrap/js/bootstrap.bundle.min.js',
+        'Admin2CSS/vendor/jquery-easing/jquery.easing.min.js',
+        'Admin2CSS/js/sb-admin-2.min.js'
+    ]
 
   ///
   ///
@@ -50,7 +50,7 @@ export default function Login(props) {
 
   let LoginForm = () => {
     useEffect(() => {
-      console.log(document.styleSheets);
+      // console.log(document.styleSheets);
       LoginCSSDIR.forEach((val, i) => {
         addCSS('lgin',val, i);
       });
@@ -58,16 +58,15 @@ export default function Login(props) {
         return () => 
         {
             // listcss.map((val,i)=>{ return val.remove() })
-            // adminCSS.forEach((val,i)=> {
-            //     addCSS('adm',val,i)
-            // })
-            // adminScript.forEach((val,i)=> {
-            //     addScript('adm',val,i)
-            // })
+            admin2CSS.forEach((val,i)=> {
+                addCSS('adm',val,i)
+            })
+            admin2Script.forEach((val,i)=> {
+                addScript('adm',val,i)
+            })
 
-            clearCSS('lgin')
-            
-            addAdminCSSvsJS3().then(()=> {  })
+            // clearCSS('lgin')
+            // addAdminCSSvsJS3().then(()=> {  })
         };
       // eslint-disable-next-line
     }, []);

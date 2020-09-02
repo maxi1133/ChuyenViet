@@ -4,7 +4,7 @@ export let addCSS = (id, url, i) => {
   var head = document.head;
   var link = document.createElement("link");
   link.id = id;
-//   link.type = "text/css";
+  link.type = "text/css";
   link.rel = "stylesheet";
   link.href = url;
   
@@ -25,10 +25,7 @@ export let clearCSS =(id) => {
         val.remove()
     })
 }
-
-
-
-
+/////////////////////////
 let listAdmin3CSS = [
   "https://fonts.googleapis.com/css?family=Open+Sans:400,600,800",
   "/Admin3/bower_components/bootstrap/css/bootstrap.min.css",

@@ -22,9 +22,9 @@ export default function TestAdminRoute()
           id="accordionSidebar"
         >
           {/* Sidebar - Brand */}
-          <a
+          <Link
             className="sidebar-brand d-flex align-items-center justify-content-center"
-            href="index.html"
+            to='#'
           >
             <div className="sidebar-brand-icon rotate-n-15">
               <i className="fas fa-laugh-wink" />
@@ -32,15 +32,15 @@ export default function TestAdminRoute()
             <div className="sidebar-brand-text mx-3">
               SB Admin <sup>2</sup>
             </div>
-          </a>
+          </Link>
           {/* Divider */}
           <hr className="sidebar-divider my-0" />
           {/* Nav Item - Dashboard */}
           <li className="nav-item active">
-            <a className="nav-link" href=" ">
+            <Link className="nav-link" to='#'>
               <i className="fas fa-fw fa-tachometer-alt" />
               <span>Dashboard</span>
-            </a>
+            </Link>
           </li>
           {/* Divider */}
           <hr className="sidebar-divider" />
@@ -50,7 +50,7 @@ export default function TestAdminRoute()
           <li className="nav-item">
             <a
               className="nav-link collapsed"
-              href="#"
+              href='true'
               data-toggle="collapse"
               data-target="#collapseTwo"
               aria-expanded="true"
@@ -67,20 +67,20 @@ export default function TestAdminRoute()
             >
               <div className="bg-white py-2 collapse-inner rounded">
                 <h6 className="collapse-header">Custom Components:</h6>
-                <a className="collapse-item" href=" ">
+                <Link className="collapse-item" to='#'>
                   Buttons
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Cards
-                </a>
+                </Link>
               </div>
             </div>
           </li>
           {/* Nav Item - Utilities Collapse Menu */}
           <li className="nav-item">
-            <a
+            <Link
               className="nav-link collapsed"
-              href=" "
+              to='#'
               data-toggle="collapse"
               data-target="#collapseUtilities"
               aria-expanded="true"
@@ -88,7 +88,7 @@ export default function TestAdminRoute()
             >
               <i className="fas fa-fw fa-wrench" />
               <span>Utilities</span>
-            </a>
+            </Link>
             <div
               id="collapseUtilities"
               className="collapse"
@@ -97,18 +97,18 @@ export default function TestAdminRoute()
             >
               <div className="bg-white py-2 collapse-inner rounded">
                 <h6 className="collapse-header">Custom Utilities:</h6>
-                <a className="collapse-item" href=" ">
+                <Link className="collapse-item" to='#'>
                   Colors
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Borders
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Animations
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Other
-                </a>
+                </Link>
               </div>
             </div>
           </li>
@@ -118,9 +118,9 @@ export default function TestAdminRoute()
           <div className="sidebar-heading">Addons</div>
           {/* Nav Item - Pages Collapse Menu */}
           <li className="nav-item">
-            <a
+            <Link
               className="nav-link collapsed"
-              href=" "
+              to='#'
               data-toggle="collapse"
               data-target="#collapsePages"
               aria-expanded="true"
@@ -128,7 +128,7 @@ export default function TestAdminRoute()
             >
               <i className="fas fa-fw fa-folder" />
               <span>Pages</span>
-            </a>
+            </Link>
             <div
               id="collapsePages"
               className="collapse"
@@ -137,50 +137,50 @@ export default function TestAdminRoute()
             >
               <div className="bg-white py-2 collapse-inner rounded">
                 <h6 className="collapse-header">Login Screens:</h6>
-                <a className="collapse-item" href=" ">
+                <Link className="collapse-item" to='#'>
                   Login
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Register
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Forgot Password
-                </a>
+                </Link>
                 <div className="collapse-divider" />
                 <h6 className="collapse-header">Other Pages:</h6>
-                <a className="collapse-item" href=" ">
+                <Link className="collapse-item" to='#'>
                   404 Page
-                </a>
-                <a className="collapse-item" href=" ">
+                </Link>
+                <Link className="collapse-item" to='#'>
                   Blank Page
-                </a>
+                </Link>
               </div>
             </div>
           </li>
           {/* Nav Item - Charts */}
           <li className="nav-item">
-            <a className="nav-link" href=" ">
+            <Link className="nav-link" to='#'>
               <i className="fas fa-fw fa-chart-area" />
               <span>Charts</span>
-            </a>
+            </Link>
           </li>
           {/* Nav Item - Tables */}
           <li className="nav-item">
-            <a className="nav-link" href=" ">
+            <Link className="nav-link" to='#'>
               <i className="fas fa-fw fa-table" />
               <span>Tables</span>
-            </a>
+            </Link>
           </li>
           {/* Thoát */}
           <li className="nav-item">
-            <a
+            <Link
               className="nav-link"
               style={{ cursor: "pointer" }}
               onClick={(e) => {}}
             >
               <i className="fas fa-fw fa-table" />
               <span>Thoát</span>
-            </a>
+            </Link>
           </li>
           {/* Divider */}
           <hr className="sidebar-divider d-none d-md-block" />
@@ -223,7 +223,7 @@ export default function TestAdminRoute()
               <ul className="navbar-nav ml-auto">
                 {/* Nav Item - Search Dropdown (Visible Only XS) */}
                 <li className="nav-item dropdown no-arrow d-sm-none">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     href="#"
                     id="searchDropdown"
@@ -233,7 +233,7 @@ export default function TestAdminRoute()
                     aria-expanded="false"
                   >
                     <i className="fas fa-search fa-fw" />
-                  </a>
+                  </Link>
                   {/* Dropdown - Messages */}
                   <div
                     className="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
@@ -259,7 +259,7 @@ export default function TestAdminRoute()
                 </li>
                 {/* Nav Item - Alerts */}
                 <li className="nav-item dropdown no-arrow mx-1">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     href="#"
                     id="alertsDropdown"
@@ -271,14 +271,14 @@ export default function TestAdminRoute()
                     <i className="fas fa-bell fa-fw" />
                     {/* Counter - Alerts */}
                     <span className="badge badge-danger badge-counter">3+</span>
-                  </a>
+                  </Link>
                   {/* Dropdown - Alerts */}
                   <div
                     className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="alertsDropdown"
                   >
                     <h6 className="dropdown-header">Alerts Center</h6>
-                    <a
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -295,8 +295,8 @@ export default function TestAdminRoute()
                           A new monthly report is ready to download!
                         </span>
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -311,8 +311,8 @@ export default function TestAdminRoute()
                         </div>
                         $290.29 has been deposited into your account!
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -328,18 +328,18 @@ export default function TestAdminRoute()
                         Spending Alert: We've noticed unusually high spending
                         for your account.
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item text-center small text-gray-500"
                       href="#"
                     >
                       Show All Alerts
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 {/* Nav Item - Messages */}
                 <li className="nav-item dropdown no-arrow mx-1">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     href="#"
                     id="messagesDropdown"
@@ -351,14 +351,14 @@ export default function TestAdminRoute()
                     <i className="fas fa-envelope fa-fw" />
                     {/* Counter - Messages */}
                     <span className="badge badge-danger badge-counter">7</span>
-                  </a>
+                  </Link>
                   {/* Dropdown - Messages */}
                   <div
                     className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="messagesDropdown"
                   >
                     <h6 className="dropdown-header">Message Center</h6>
-                    <a
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -379,8 +379,8 @@ export default function TestAdminRoute()
                           Emily Fowler · 58m
                         </div>
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -399,8 +399,8 @@ export default function TestAdminRoute()
                         </div>
                         <div className="small text-gray-500">Jae Chun · 1d</div>
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -421,8 +421,8 @@ export default function TestAdminRoute()
                           Morgan Alvarez · 2d
                         </div>
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item d-flex align-items-center"
                       href="#"
                     >
@@ -444,19 +444,19 @@ export default function TestAdminRoute()
                           Chicken the Dog · 2w
                         </div>
                       </div>
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                       className="dropdown-item text-center small text-gray-500"
                       href="#"
                     >
                       Read More Messages
-                    </a>
+                    </Link>
                   </div>
                 </li>
                 <div className="topbar-divider d-none d-sm-block" />
                 {/* Nav Item - User Information */}
                 <li className="nav-item dropdown no-arrow">
-                  <a
+                  <Link
                     className="nav-link dropdown-toggle"
                     href="#"
                     id="userDropdown"
@@ -472,26 +472,26 @@ export default function TestAdminRoute()
                       className="img-profile rounded-circle"
                       src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
                     />
-                  </a>
+                  </Link>
                   {/* Dropdown - User Information */}
                   <div
                     className="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="userDropdown"
                   >
-                    <a className="dropdown-item" href="#">
+                    <Link className="dropdown-item" href="#">
                       <i className="fas fa-user fa-sm fa-fw mr-2 text-gray-400" />
                       Profile
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       <i className="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400" />
                       Settings
-                    </a>
-                    <a className="dropdown-item" href="#">
+                    </Link>
+                    <Link className="dropdown-item" href="#">
                       <i className="fas fa-list fa-sm fa-fw mr-2 text-gray-400" />
                       Activity Log
-                    </a>
+                    </Link>
                     <div className="dropdown-divider" />
-                    <a
+                    <Link
                       className="dropdown-item"
                       href="/#"
                       data-toggle="modal"
@@ -499,7 +499,7 @@ export default function TestAdminRoute()
                     >
                       <i className="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400" />
                       Logout
-                    </a>
+                    </Link>
                   </div>
                 </li>
               </ul>
@@ -512,9 +512,9 @@ export default function TestAdminRoute()
               <h1 className="h3 mb-1 text-gray-800">Color Utilities</h1>
               <p className="mb-4">
                 Bootstrap's default utility classes can be found on the official{" "}
-                <a href="https://getbootstrap.com/docs">
+                <Link href="https://getbootstrap.com/docs">
                   Bootstrap Documentation
-                </a>{" "}
+                </Link>{" "}
                 page. The custom utilities below were created to extend this
                 theme past the default utility classes built into Bootstrap's
                 framework.
@@ -653,6 +653,7 @@ export default function TestAdminRoute()
           {/* End of Footer */}
 
         </div>
+      
       </div>
 
       
