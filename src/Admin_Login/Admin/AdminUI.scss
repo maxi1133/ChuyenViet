@@ -1,0 +1,161 @@
+.TopNav {
+    position: fixed;
+    height: 56px;
+    width: 100%;
+    
+    
+    display: flex;
+    box-shadow: 0 0 13px rgba(0,0,0,0.3);
+    z-index: 100;
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        min-width:  240px;
+        background-color: #404E67;
+        // padding: 20px;
+        .imagecontainer{
+            padding-left: 15px;
+            
+        }
+        .togglebuttoncontainer {
+            padding-right: 15px;
+            display: flex;
+            justify-content: center;
+            .togglebutton {
+                appearance: none;
+                position: relative;
+                margin: 0;
+                width: 40px;
+                height: 15px;
+                background: linear-gradient(0deg ,#333 , #000);
+                outline: none;
+                border-radius: 20px;
+                
+            }
+            .togglebutton::before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 15px;
+                background: linear-gradient(0deg,#000 , #6b6b6b);
+                border-radius: 20px;
+                transform: scale(.98,.96);
+                transition: .5s;
+            }
+            .togglebutton:checked::before {
+                left: 10px;
+            }
+            .togglebutton::after {
+                content: '';
+                position: absolute;
+                width: 4px;
+                height: 5px;
+                top: calc(50% - 2px);
+                left: 20px;
+                background:white;
+                //transition: 0.5s;
+                border-radius: 50%;
+            }
+            .togglebutton:checked::after {
+                left: 30px;
+            }
+        }
+    }
+    .nextLogo {
+        
+        width: 100%;
+        background: #fff;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__right{
+            margin-right: 15px;
+            i {
+                font-size: 20px;
+                padding:10px;
+                cursor: pointer;
+            }
+
+        }
+    }
+    // 404E67 fff
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.SideNav 
+{
+    top: 56px;bottom: 0;
+    position: fixed;
+    width: 240px;
+    
+    background: #404E67;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 99;
+    // 404E67 fff
+
+    transition: 0.5s;
+    
+    .SideNavElement {
+        display: flex;
+        .borderdoc {
+            border: 1px solid greenyellow;
+            opacity: 0; 
+        }
+        .link {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            padding: 15px 24px;
+            color: #dcdcdc; 
+            text-decoration: none;
+            width: 100%;
+            transition: 0.3s;
+            i {
+                font-size: 15px;
+                
+            }
+            span{
+                padding-left: 20px;
+            }
+            // text-transform: uppercase;
+        }
+        .link:hover {
+            color: #fff;
+        }
+    }
+    .SideNavElement:hover {
+        .borderdoc {
+            opacity: 1;
+        }
+    }
+}
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+.Main {
+    
+    padding-top: 76px;
+    padding-right: 15px;
+    padding-left: 255px;
+    transition: 0.5s;
+    
+    .submain {
+        height: 100vh;
+        width: 100%;
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
