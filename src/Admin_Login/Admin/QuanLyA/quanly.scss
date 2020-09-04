@@ -1,0 +1,23 @@
+.card {
+    width: 100%;
+    padding: 15px;
+    background: #fff;
+    border-radius: 10px;
+    height: 700px;
+
+    .table tbody tr td {
+        vertical-align: inherit;
+        
+    }
+
+    .table thead tr th {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .Paginate{
+        padding-top: 20px ;
+        display: flex;
+        justify-content: flex-end
+    }
+}
